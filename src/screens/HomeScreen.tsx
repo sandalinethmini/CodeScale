@@ -5,26 +5,21 @@ import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view
 
 const HomeScreen: React.FC = (props:any) => {
 
-    
-
-    const stack = props.navigation;
-  return (
-    <View style={sty.container}>
+        
+         return (
+         <View>
             <KeyboardAwareScrollView>
-            <Text style={sty.title}>
-               My App
-            </Text>
-        
-            
-        
-                    
-        
-                    
-        
-                    
-        
-                   
-            </KeyboardAwareScrollView>
+
+
+
+<Text>
+    My App
+</Text>
+
+
+
+
+    </KeyboardAwareScrollView>;
             
         </View>
   );
