@@ -9,6 +9,10 @@ const LoginScreen: React.FC = (props:any) => {
          stack.navigate('SignUp')
     }
 
+    function goToHome(){
+        stack.navigate('Home')
+    }
+
     const stack = props.navigation;
   return (
     <View style={sty.container}>
@@ -23,7 +27,9 @@ const LoginScreen: React.FC = (props:any) => {
                         height: '10%',
                         marginTop:'10%',
                         borderRadius:12,
+                        
                         justifyContent:'center',
+                        alignItems:'center',
                         paddingLeft:20
                         
                     }}>
@@ -42,6 +48,7 @@ const LoginScreen: React.FC = (props:any) => {
                         marginTop:20,
                         borderRadius:12,
                         justifyContent:'center',
+                        alignItems:'center',
                         paddingLeft:20
                         
                     }}>
@@ -64,24 +71,25 @@ const LoginScreen: React.FC = (props:any) => {
                     }}>
                        forgot password?
                     </Text>
-        
-                    <View style={{
-                        backgroundColor:'#FFD482',
+
+                    <TouchableOpacity style={{
                         width:'90%',
                         height: '10%',
-                        marginTop:'10%',
+                        backgroundColor:'#FFD482',
                         borderRadius:12,
                         justifyContent:'center',
                         alignItems:'center',
-                        
-                        
-                    }}>
+                        marginTop:10
+                    }} onPress={goToHome}>
+        
+                   
                         <Text style={{
                             fontWeight:700,
                             fontSize:20
                         }}> Sign In</Text>
         
-                    </View>
+                    
+                    </TouchableOpacity>
         
                     <Text style={{
                         color:'white',
