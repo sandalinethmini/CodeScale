@@ -57,7 +57,7 @@ const InputSection: React.FC<InputSectionProps> = ({ stack }) => {
         <View style={styles.inputContainer}>
           <TextInput
             placeholder="email"
-            placeholderTextColor="white"
+            placeholderTextColor="gray"
             style={styles.input}
             onChangeText={setUserEmail}
             value={userEmail}
@@ -67,7 +67,7 @@ const InputSection: React.FC<InputSectionProps> = ({ stack }) => {
         <View style={styles.inputContainer}>
           <TextInput
             placeholder="password"
-            placeholderTextColor="white"
+            placeholderTextColor="gray"
             secureTextEntry
             style={styles.input}
             onChangeText={setUserPassword}
@@ -129,7 +129,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     marginTop: '20%',
     color: 'white',
+    // fontFamily: 'Inter-Black'
   },
+  
   inputContainerCenter: {
     alignItems: 'center',
   },
@@ -145,6 +147,7 @@ const styles = StyleSheet.create({
   input: {
     fontSize: 20,
     color: 'white',
+
   },
   forgotPasswordContainer: {
     marginRight: '5%',
